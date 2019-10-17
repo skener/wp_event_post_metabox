@@ -1,0 +1,9 @@
+{
+  "name": "andriy_tserkovnyk/admin-page",
+  "require": {},
+  "autoload": {
+    "psr-4": {
+      "Admin\\": "admin"
+    }
+  }
+}
