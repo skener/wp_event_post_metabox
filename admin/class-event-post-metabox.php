@@ -62,14 +62,22 @@
             $inputTwo = get_post_meta($post->ID, 'event_input_msg_2', true);
             ?>
             <div>
-                <label for="inputOne"><h4>Input 1</h4></label>
-                <textarea name="inputOne">
+                <table>
+                    <tr>
+                        <td>
+                            <label for="inputOne"><p>Input 1:</p></label>
+                            <textarea id="inputOne" name="inputOne" rows="3" cols="50" placeholder="...">
 					<?php echo esc_attr($inputOne); ?>
                     </textarea>
-                <label for="InputTwo"><h4>Input 2</h4></label>
-                <textarea name="inputTwo">
+                        </td>
+                        <td>
+                            <label for="inputTwo"><p>Input 2:</p></label>
+                            <textarea id="inputTwo" name="inputTwo" rows="3" cols="50" maxlength="50" placeholder="...">
 					<?php echo esc_attr($inputTwo); ?>
                     </textarea>
+                        </td>
+                    </tr>
+                </table>
             </div>
             <?php
         }
@@ -77,7 +85,8 @@
         public function add_event_metaboxes()
         {
             
-            add_meta_box('event_id', 'Event-meta-box', [$this,'event_form_markup_func'], 'event', 'normal', 'high', null);
+            add_meta_box('event_id', 'Event-meta-box', [$this, 'event_form_markup_func'], 'event', 'normal', 'high',
+                null);
             
         }
         

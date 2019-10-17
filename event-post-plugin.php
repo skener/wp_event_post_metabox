@@ -2,11 +2,11 @@
     
     /**
      * Plugin name: Events post type
-     * Plugin URI:        https://skener.githu.io/cv
+     * Plugin URI:        https://skener.github.io/cv
      * Description:       Create Event Post Type and add two metabox fields.
      * Version:           1.0.0
      * Author:            Andriy Tserkovnyk <skenerster@gmail.com>
-     * Author URI:        https://skener.githu.io/cv
+     * Author URI:        https://skener.github.io/cv
      * Text Domain:       skener
      *
      * @package WordPress.
